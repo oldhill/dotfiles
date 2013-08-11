@@ -9,5 +9,5 @@ fi
 set -o vi
 
 # Shell prompt
-# the e's and brackets are for color
-export PS1="[\u\e[0;31m@\e[m\w ]\$"
+# [\e....e[\] is all for colored "@" sign
+export PS1="[\u\[\e[0;31m@\e[\]m\w ]\$"
