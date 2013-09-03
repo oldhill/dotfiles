@@ -7,6 +7,7 @@ fi
 
 # User specific aliases and functions
 set -o vi
+alias dowork="tmux attach -t oldhill"
 
 # Shell prompt
 # [\e....e[\] is all for colored "@" sign
