@@ -8,6 +8,7 @@ fi
 # User specific aliases and functions
 set -o vi
 alias dowork="tmux attach -t oldhill"
+alias panes="tmux split-window -h"
 
 # Shell prompt
 # [\e....e[\] is all for colored "@" sign
