@@ -1,4 +1,4 @@
-# Config for mac osx
+# Config for Mac OSX
 
 # ls and ls-l context-coloring for dark mac terminal colorscheme
 export CLICOLOR=1
@@ -21,3 +21,6 @@ function parse_git_branch {
 # highlighted directory name, git branch, etc.
 # http://askubuntu.com/questions/123268/changing-colors-for-user-host-directory-information-in-terminal-command-prompt
 PS1='[\t] \u@\h \[\033[01;32m\]\W \[\033[00m\]$(parse_git_branch)$ '
+
+# sublime text command line utility
+alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
