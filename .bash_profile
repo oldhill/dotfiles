@@ -1,5 +1,9 @@
 # Config for Mac OSX
 
+# Force homebrew versions of git and python, rather than osx versions
+export PATH=/usr/local/bin/git:$PATH
+export PATH=/usr/local/bin/python:$PATH
+
 # ls and ls-l context-coloring for dark mac terminal colorscheme
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
