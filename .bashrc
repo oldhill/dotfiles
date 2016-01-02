@@ -1,15 +1,16 @@
-# .bashrc
+# Custom stuff to add to .bashrc
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
+# vim as default editor
+export EDITOR=vim
 
-# User specific aliases and functions
+# vim keybindings at command prompt (remaps in .inputrc)
 set -o vi
-alias dowork="tmux attach -t oldhill"
-alias panes="tmux split-window -h"
 
-# Shell prompt
-# [\e....e[\] is all for colored "@" sign
-export PS1="[\u\[\e[0;31m@\e[\]m\w ]\$"
+# git branch in command prompt
+function parse_git_branch {
+  sed -e 's/ref: refs\/heads\/\(.*\)/ (\1)/' .git/HEAD 2> /dev/null
+}
+
+# highlighted directory name, git branch, etc.
+# http://askubuntu.com/questions/123268/changing-colors-for-user-host-directory-information-in-terminal-command-prompt
+PS1='[\t] \u@\h \[\033[01;32m\]\W \[\033[00m\]$(parse_git_branch)$ '

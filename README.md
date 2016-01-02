@@ -1,6 +1,9 @@
 dotfiles
 ========
 
-Basic config for vim and bash
+Basic vim and bash configs for Mac OSX (.bash_profile) and Linux (.bashrc)
 
-Requires gmarik's [Vundle](https://github.com/gmarik/vundle) plugin manager for Vim
+Displays git branch in custom colored command prompt, configures vim keybindings at command prompt with remap, and other things
+
+Not currently using tmux related things
+
