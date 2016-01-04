@@ -8,6 +8,7 @@ set showmode
 set title
 set number
 set autoindent
+set ruler
 colorscheme slate
 
 """""""""""""" Re-maps
