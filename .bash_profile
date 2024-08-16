@@ -1,7 +1,7 @@
 # Config for Mac OSX
 
-# Force homebrew version of git
-export PATH=/usr/local/bin/git:$PATH
+# Add new /opt/homebrew folder to path?
+export PATH=/opt/homebrew/bin:$PATH
 
 # ls and ls-l context-coloring for dark mac terminal colorscheme
 export CLICOLOR=1
